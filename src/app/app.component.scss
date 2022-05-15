@@ -1,0 +1,30 @@
+nav {
+    padding: 65px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+input {
+    position: absolute;
+    padding: 20px;
+    width: 35%;
+    margin-left: 15%;
+    border-radius: 20px;
+    border: none;
+    background: transparent;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+
+input:focus {
+    outline: none;
+    background:beige;
+}
+
+button {
+    cursor: pointer;
+    float: right;
+    padding: 10px;
+    border-radius: 20px;
+}

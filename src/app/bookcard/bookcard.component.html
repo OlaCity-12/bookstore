@@ -1,0 +1,19 @@
+<mat-card class="book-card" *ngFor="let book of booklist$ |async" (click)="addToWishList(book.id)" >
+  <mat-card-header>
+    <div mat-card-avatar class="book-header-image"></div>
+    <mat-card-title>{{ book.bookname }}</mat-card-title>
+    <mat-card-subtitle>Published On: {{ book.publishdate }}</mat-card-subtitle>
+    <mat-card-subtitle>Published By:{{ book.publisher }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="book.img" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      {{ book.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions class="wish-btn">
+    Add to WISHLIST
+  </mat-card-actions>
+</mat-card>
+  
+
